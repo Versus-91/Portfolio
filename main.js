@@ -1,4 +1,4 @@
-const { createApp, ref, reactive, computed } = Vue
+import { createApp, ref, reactive, computed } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.esm-browser.prod.min.js'
 
 createApp({
     setup() {
@@ -73,7 +73,7 @@ createApp({
                 ]
         })
 
-        currentCards = computed(() => {
+        const currentCards = computed(() => {
             console.log(tag.value);
 
             return tag.value != '' ? works_content.arr.filter(c => c.tags.includes(tag.value)) : works_content.arr
