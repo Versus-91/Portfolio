@@ -72,10 +72,12 @@
                     <h3 class="title is-2">Portfolio</h3>
                     <h4 class="subtitle is-5">My latest works</h4>
                 </div>
-                <p>Tags:</p>
-                <button @click="setTag('Deep Learning')" class="button ml-1 my-1">Machine Learining</button>
-                <button @click="setTag('Web')" class="button ml-1 my-1">Web</button>
-                <button @click="setTag('')" class="button ml-1 my-1">Reset</button>
+                <p>Tags: {{tag}} ff</p>
+                <button @click="setTag('Deep Learning')" class="button ml-1 is-light my-1"
+                    :class="tag == 'Deep Learning'? 'is-active' : ''">Machine Learning</button>
+                <button @click="setTag('Web')" :class="tag == 'Web'? 'is-active' : ''"
+                    class="button ml-1 is-light my-1">Web</button>
+                <button @click="setTag('')" class="button ml-1 is-light my-1">Reset</button>
 
                 <br>
                 <div class="container portfolio-container">
@@ -86,7 +88,7 @@
                                     <p class="card-header-title">
                                         <span>{{card.title}}</span>
                                         <span class="is-pulled-right">
-                                            <span class="tag is-default">Web</span>
+                                            <span class="tag is-default">{{card.tags.join(', ')}}</span>
                                         </span>
                                     </p>
                                 </header>
@@ -299,7 +301,7 @@
                 <div class="column">
                     <div class="box">
                         <div class="content">
-                            <h4 class="title is-5">Machine Learining</h4>
+                            <h4 class="title is-5">Machine Learning</h4>
                             Experienced in building models that learn directly from data using both deep learning and
                             traditional machine learning techniques. Skilled in applying Explainable AI (XAI) methods to
                             interpret and explain decisions made by black-box models.

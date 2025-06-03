@@ -10,7 +10,7 @@ createApp({
             arr:
                 [
                     {
-                        title: 'Machine Learining in Web',
+                        title: 'Machine Learning in Web',
                         description: `A web platform common machine learning, data visualization, explainable AI, and
                                 dimensionality reduction for machine learning pipelines inside a web platform with the
                                 capability of using TU Dresden HPC server for large datasets.`,
@@ -30,7 +30,7 @@ createApp({
                         previewLink: 'https://versus-91.github.io/ParallelCoordinatePlot/"',
                         palceholderImage: 'images/t.webp',
                         sourceLink: 'https://github.com/Versus-91/SpatiallyAwareTransformerNetwork',
-                        tags: ['Deep Learining']
+                        tags: ['Deep Learning']
                     },
                     {
                         title: 'Force Directed Graph and Magic Lense ',
@@ -61,8 +61,8 @@ createApp({
                         palceholderImage: 'images/map.png',
                         tags: ['Web']
                     }, {
-                        title: 'Reinforcement Learining Pac-man',
-                        description: `Using Deep Reinforcement Learining models to learn how to play Pac-man based on
+                        title: 'Reinforcement Learning Pac-man',
+                        description: `Using Deep Reinforcement Learning models to learn how to play Pac-man based on
                                 interaction wiith the game
                                 and feedback received.`,
                         previewLink: '#',
@@ -72,10 +72,7 @@ createApp({
                     },
                 ]
         })
-
         const currentCards = computed(() => {
-            console.log(tag.value);
-
             return tag.value != '' ? works_content.arr.filter(c => c.tags.includes(tag.value)) : works_content.arr
         })
         return {
