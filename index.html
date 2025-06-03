@@ -79,7 +79,7 @@
                         :class="tag == 'Deep Learning'? 'is-active' : ''">Machine Learning</button>
                     <button @click="setTag('Web')" :class="tag == 'Web'? 'is-active' : ''"
                         class="button ml-1 is-light my-1">Web</button>
-                    <button @click="setTag('')" class="button ml-1 is-light my-1">Reset</button>
+                    <button @click="setTag('')" class="button ml-1 is-warning my-1">Reset</button>
 
                 </div>
 
@@ -107,10 +107,12 @@
 
 
                                 </div>
+
                                 <footer class="card-footer">
-                                    <a href="#" class="card-footer-item">Preview</a>
-                                    <a href="#" class="card-footer-item">Source
-                                        Code</a>
+                                    <a :href="card.previewLink" class="card-footer-item">{{ card.previewLink === '#'
+                                        ?'Not available' : 'Preview' }}</a>
+                                    <a :href="card.sourceLink" class="card-footer-item">{{card.sourceLink === '#'
+                                        ?"Not available" :'Source'}}</a>
                                 </footer>
                             </div>
                         </div>
@@ -120,9 +122,7 @@
     </div>
     </div>
     </section>
-    <!-- About -->
     <section class="section" id="about">
-        <!-- Title -->
         <div class="section-heading">
             <h3 class="title is-2">About Me</h3>
             <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
@@ -173,8 +173,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulmatemplates.github.io/bulma-templates/images/first-post.png"
-                                alt="Placeholder image">
+                            <img src="images/application.webp" alt="Placeholder image">
                         </figure>
                     </div>
                 </div>

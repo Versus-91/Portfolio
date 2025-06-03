@@ -1,4 +1,4 @@
-import { createApp, ref, reactive, computed } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.esm-browser.prod.min.js'
+import { createApp, ref, reactive, computed } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.esm-browser.min.js'
 
 createApp({
     setup() {
@@ -27,18 +27,16 @@ createApp({
                                 patches rather than the entire image. The aim of this project was to explore methods
                                 that can be useful for directly changing attention scores based on patch distances to
                                 create a distance-aware Vision Transformer.`,
-                        previewLink: 'https://versus-91.github.io/ParallelCoordinatePlot/"',
+                        previewLink: '#',
                         palceholderImage: 'images/t.webp',
                         sourceLink: 'https://github.com/Versus-91/SpatiallyAwareTransformerNetwork',
                         tags: ['Deep Learning']
                     },
                     {
                         title: 'Force Directed Graph and Magic Lense ',
-                        description: `Parallel Coordinate Plot visualization for high deimension data visualization with magic
-                                lense for focusing on
-                                certain parts of the visualization.`,
-                        previewLink: 'https://versus-91.github.io/ParallelCoordinatePlot/',
-                        sourceLink: 'https://github.com/Versus-91/ParallelCoordinatePlot',
+                        description: `Force Directed Graph for visualizing graphs with magic lense to show extra information based on user interactions.`,
+                        previewLink: 'https://versus-91.github.io/ForceDirectedGraph/',
+                        sourceLink: 'https://github.com/Versus-91/ForceDirectedGraph',
                         palceholderImage: 'images/pcp.png',
                         tags: ['Web']
                     },
@@ -49,14 +47,14 @@ createApp({
                                 certain parts of the visualization.`,
                         previewLink: '#',
                         sourceLink: '#',
-                        palceholderImage: 'images/para.png',
+                        palceholderImage: 'images/para.webp',
                         tags: ['Web']
                     }, {
-                        title: 'D3 US airports visualization',
+                        title: 'US airports visualization with D3',
                         description: `Parallel Coordinate Plot visualization for high deimension data visualization with magic
                                 lense for focusing on
                                 certain parts of the visualization.`,
-                        previewLink: 'images/map.png',
+                        previewLink: '#',
                         sourceLink: '#',
                         palceholderImage: 'images/map.png',
                         tags: ['Web']
