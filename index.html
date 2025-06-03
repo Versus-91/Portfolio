@@ -15,231 +15,104 @@
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar is-link is-fixed-top">
-        <div class="navbar-brand">
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
+    a <div id="app">
+        <!-- Navigation bar -->
+        <nav class="navbar is-link is-fixed-top">
+            <div class="navbar-brand">
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="#about">
-                    <span class="icon">
-                        <i class="fas fa-info"></i>
-                    </span>
-                    <span>About</span>
-                </a>
-                <a class="navbar-item" href="#services">
-                    <span class="icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                    <span>Services</span>
-                </a>
-                <a class="navbar-item" href="#resume">
-                    <span class="icon">
-                        <i class="fas fa-file-alt"></i>
-                    </span>
-                    <span>Resume</span>
-                </a>
-                <a class="navbar-item" href="#portfolio">
-                    <span class="icon">
-                        <i class="fas fa-th-list"></i>
-                    </span>
-                    <span>Portfolio</span>
-                </a>
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#about">
+                        <span class="icon">
+                            <i class="fas fa-info"></i>
+                        </span>
+                        <span>About</span>
+                    </a>
+                    <a class="navbar-item" href="#services">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <span>Services</span>
+                    </a>
+                    <a class="navbar-item" href="#resume">
+                        <span class="icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <span>Resume</span>
+                    </a>
+                    <a class="navbar-item" href="#portfolio">
+                        <span class="icon">
+                            <i class="fas fa-th-list"></i>
+                        </span>
+                        <span>Portfolio</span>
+                    </a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section class="hero is-link ">
-        <div class="hero-body">
-            <div class="container">Hello! I am
-                <h1 class="title is-1">
-                    Qader Qaribiyan
-                </h1>
-                <h2 class="subtitle is-3">
-                    Full Stack Web Developer
-                </h2>
+        </nav>
+        <section class="hero is-link ">
+            <div class="hero-body">
+                <div class="container">Hello! I am
+                    <h1 class="title is-1">
+                        Qader Qaribiyan
+                    </h1>
+                    <h2 class="subtitle is-3">
+                        Full Stack Web Developer
+                    </h2>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="section" id="portfolio">
-        <div class="container">
-            <div class="section-heading">
-                <h3 class="title is-2">Portfolio</h3>
-                <h4 class="subtitle is-5">My latest works</h4>
-            </div>
-            <br>
+        </section>
+        <section class="section" id="portfolio">
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="title is-2">Portfolio</h3>
+                    <h4 class="subtitle is-5">My latest works</h4>
+                </div>
+                <p>Tags:</p>
+                <button @click="setTag('Deep Learning')" class="button ml-1 my-1">Machine Learining</button>
+                <button @click="setTag('Web')" class="button ml-1 my-1">Web</button>
+                <button @click="setTag('')" class="button ml-1 my-1">Reset</button>
 
-            <div class="container portfolio-container">
-                <div class="columns is-multiline">
-                    <div class="column is-4">
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    <span>Machine Learining in Web</span>
-                                    <span class="is-pulled-right">
-                                        <span class="tag is-default">Web</span>
-                                    </span>
-                                </p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img src="images/t.webp" alt="Cards template screenshot">
-                                </figure>
-                                A web platform common machine learning, data visualization, explainable AI, and
-                                dimensionality reduction for machine learning pipelines inside a web platform with the
-                                capability of using TU Dresden HPC server for large datasets.
+                <br>
+                <div class="container portfolio-container">
+                    <div class="columns is-multiline">
+                        <div class="column is-4" v-for="card in currentCards" :key="card.title">
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        <span>{{card.title}}</span>
+                                        <span class="is-pulled-right">
+                                            <span class="tag is-default">Web</span>
+                                        </span>
+                                    </p>
+                                </header>
 
+                                <div class="card-content">
+                                    <figure class="image">
+                                        <img :src="card.palceholderImage">
+                                    </figure>
+
+                                    {{card.description}}
+
+
+
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Preview</a>
+                                    <a href="#" class="card-footer-item">Source
+                                        Code</a>
+                                </footer>
                             </div>
-                            <footer class="card-footer">
-                                <a href="templates/cards.html" class="card-footer-item">Preview</a>
-                                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html"
-                                    class="card-footer-item">Source
-                                    Code</a>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    <span>Distance Aware Vision Transformer</span>
-                                    <span class="is-pulled-right">
-                                        <span class="tag is-default">Deep Learining</span>
-                                    </span>
-                                </p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img src="images/t.webp">
-                                </figure>
-                                Vision Transformer models are permutation invariant, meaning they cannot discern the
-                                order of image token embeddings. In the case of whole slide images, it is common to use
-                                sample
-                                patches rather than the entire image. The aim of this project was to explore methods
-                                that can be useful for directly changing attention scores based on patch distances to
-                                create a distance-aware Vision Transformer.
-                            </div>
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">N/A</a>
-                                <a href="https://github.com/Versus-91/SpatiallyAwareTransformerNetwork"
-                                    class="card-footer-item">Source
-                                    Code</a>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    <span>Force directed graph and magic lense </span>
-                                    <span class="is-pulled-right">
-                                        <span class="tag is-default">Web</span>
-                                    </span>
-                                </p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img src="images/pcp.png" alt="Cards template screenshot">
-                                </figure>
-                                Parallel Coordinate Plot visualization for high deimension data visualization with magic
-                                lense for focusing on
-                                certain parts of the visualization.
-                            </div>
-                            <footer class="card-footer">
-                                <a href="https://versus-91.github.io/ParallelCoordinatePlot/"
-                                    class="card-footer-item">Preview</a>
-                                <a href="https://github.com/Versus-91/ParallelCoordinatePlot"
-                                    class="card-footer-item">Source
-                                    Code</a>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    <span>Parallel Coordinate Plot with brushing</span>
-                                    <span class="is-pulled-right">
-                                        <span class="tag is-default">Web</span>
-                                    </span>
-                                </p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img src="images/para.png" alt="Cards template screenshot">
-                                </figure>
-                                Parallel Coordinate Plot visualization for high deimension data visualization with magic
-                                lense for focusing on
-                                certain parts of the visualization.
-                            </div>
-                            <footer class="card-footer">
-                                <a href="https://versus-91.github.io/ParallelCoordinatePlot/"
-                                    class="card-footer-item">Preview</a>
-                                <a href="https://github.com/Versus-91/ParallelCoordinatePlot"
-                                    class="card-footer-item">Source
-                                    Code</a>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    <span>Parallel Coordinate Plot with brushing</span>
-                                    <span class="is-pulled-right">
-                                        <span class="tag is-default">Web</span>
-                                    </span>
-                                </p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img src="images/map.png" alt="Cards template screenshot">
-                                </figure>
-                                Visulaization of US airpotrts with force directed graph overlayed on US map with D3.js.
-                            </div>
-                            <footer class="card-footer">
-                                <a href="https://versus-91.github.io/ParallelCoordinatePlot/"
-                                    class="card-footer-item">Preview</a>
-                                <a href="https://github.com/Versus-91/ParallelCoordinatePlot"
-                                    class="card-footer-item">Source
-                                    Code</a>
-                            </footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    <span>Reinforcement Learining Pac-man</span>
-                                    <span class="is-pulled-right">
-                                        <span class="tag is-default">Deep Learning</span>
-                                    </span>
-                                </p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img src="images/drl.webp" alt="Cards template screenshot">
-                                </figure>
-                                Using Deep Reinforcement Learining models to learn how to play Pac-man based on
-                                interaction wiith the game
-                                and feedback received.
-                            </div>
-                            <footer class="card-footer">
-                                <a href="#" class="card-footer-item">N/A</a>
-                                <a href="https://github.com/Versus-91/pacman_final" class="card-footer-item">Source
-                                    Code</a>
-                            </footer>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
+    </div>
+    </div>
     </section>
     <!-- About -->
     <section class="section" id="about">
@@ -451,7 +324,9 @@
             </a>
         </div>
     </section>
+    </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
