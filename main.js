@@ -1,4 +1,4 @@
-import { createApp, ref, reactive, computed } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.esm-browser.min.js'
+import { createApp, ref, reactive, computed } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.esm-browser.prod.min.js'
 
 createApp({
     setup() {
@@ -11,9 +11,7 @@ createApp({
                 [
                     {
                         title: 'Machine Learning in Web',
-                        description: `A web platform common machine learning, data visualization, explainable AI, and
-                                dimensionality reduction for machine learning pipelines inside a web platform with the
-                                capability of using TU Dresden HPC server for large datasets.`,
+                        description: `A web-based platform for building machine learning pipelines with integrated tools for PFI, PDP, PCA, t-SNE, and autoencoders. Supports data visualization, explainable AI, and dimensionality reduction. Scales to large datasets via TU Dresden's HPC infrastructure.`,
                         previewLink: '#',
                         sourceLink: '#',
                         tags: ['Web', 'Machine Learning'],
