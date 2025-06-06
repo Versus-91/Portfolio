@@ -52,8 +52,8 @@ createApp({
                         description: `Parallel Coordinate Plot visualization for high deimension data visualization with magic
                                 lense for focusing on
                                 certain parts of the visualization.`,
-                        previewLink: '#',
-                        sourceLink: '#',
+                        previewLink: 'https://versus-91.github.io/Map/',
+                        sourceLink: 'https://github.com/Versus-91/Map',
                         palceholderImage: 'images/map.png',
                         tags: ['Web']
                     }, {
