@@ -44,7 +44,7 @@ createApp({
                                 lense for focusing on
                                 certain parts of the visualization.`,
                         previewLink: '#',
-                        sourceLink: '#',
+                        sourceLink: 'https://github.com/Versus-91/ppc',
                         palceholderImage: 'images/para.webp',
                         tags: ['Web']
                     }, {
