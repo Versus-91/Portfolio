@@ -18,6 +18,14 @@ createApp({
                         palceholderImage: 'images/t.webp'
                     },
                     {
+                        title: 'Realtor App(web and android)',
+                        description: `A full-stack real estate management platform with a web frontend built in Vue.js, a robust .NET backend using Domain-Driven Design (DDD) principles, a SQL Server database, and a cross-platform mobile app developed with Flutter.`,
+                        previewLink: '#',
+                        sourceLink: 'https://github.com/Versus-91/houseclassifieds',
+                        tags: ['Web'],
+                        palceholderImage: 'images/t.webp'
+                    },
+                    {
                         title: 'Distance Aware Vision Transformer',
                         description: `Vision Transformer models are permutation invariant, meaning they cannot discern the
                                 order of image token embeddings. In the case of whole slide images, it is common to use
