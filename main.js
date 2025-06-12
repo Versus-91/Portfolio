@@ -81,7 +81,9 @@ createApp({
         })
         return {
             tag,
-            works_content, currentCards, setTag
+            works_content,
+            currentCards,
+            setTag
         }
     }
 }).mount('#app')
