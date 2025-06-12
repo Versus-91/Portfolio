@@ -8,14 +8,16 @@
     <title>Qader Qaribiyan Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/bulma@1.0.4/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 
 <body>
-    a <div id="app">
+    <div id="app">
         <!-- Navigation bar -->
         <nav class="navbar is-link is-fixed-top">
             <div class="navbar-brand">
@@ -68,7 +70,7 @@
         </section>
         <section class="section" id="portfolio">
             <div class="container">
-                <div class="section-heading">
+                <div class="section-heading ">
                     <h3 class="title is-2">Portfolio</h3>
                     <h4 class="subtitle is-5">My latest works</h4>
                 </div>
@@ -96,18 +98,12 @@
                                         </span>
                                     </p>
                                 </header>
-
-                                <div class="card-content">
+                                <div class="card-content ">
                                     <figure class="image">
                                         <img :src="card.palceholderImage">
                                     </figure>
-
                                     {{card.description}}
-
-
-
                                 </div>
-
                                 <footer class="card-footer">
                                     <a :href="card.previewLink" class="card-footer-item">{{ card.previewLink === '#'
                                         ?'Not available' : 'Demo' }}</a>

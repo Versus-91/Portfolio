@@ -54,3 +54,9 @@ html {
   direction: rtl;
   display: inline-block;
 }
+.open-sans {
+  font-family: 'Open Sans';
+}
+body {
+  font-family: 'Roboto', Courier, monospace;
+}
