@@ -74,15 +74,12 @@
                     <h3 class="title is-2">Portfolio</h3>
                     <h4 class="subtitle is-5">My latest works</h4>
                 </div>
-
                 <p class="subtitle is-5 mb-1">Filters:</p>
-                <button @click="setTag('Deep Learning')" class="button mr-1 is-light my-1"
-                    :class="tag == 'Deep Learning'? 'is-active' : ''">Machine Learning</button>
                 <button @click="setTag('Web')" :class="tag == 'Web'? 'is-active' : ''"
-                    class="button ml-1 is-light my-1">Web</button>
-                <button @click="setTag('')" class="button ml-1 is-warning my-1">Reset</button>
-
-
+                    class="button mr-2 is-light my-3">Web</button>
+                <button @click="setTag('Deep Learning')" class="button mr-2 is-light my-3"
+                    :class="tag == 'Deep Learning'? 'is-active' : ''">Machine Learning</button>
+                <button @click="setTag('')" class="button ml-3 is-warning my-3">Reset</button>
                 <br>
                 <div class="container portfolio-container">
                     <div class="columns is-multiline">
