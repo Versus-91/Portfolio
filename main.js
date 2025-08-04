@@ -5,7 +5,7 @@ createApp({
         function setTag(value) {
             tag.value = value
         }
-        const tag = ref('')
+        const tag = ref('Web')
         const works_content = reactive({
             arr:
                 [
