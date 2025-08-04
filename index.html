@@ -41,12 +41,6 @@
                         </span>
                         <span>Services</span>
                     </a>
-                    <a class="navbar-item" href="#resume">
-                        <span class="icon">
-                            <i class="fas fa-file-alt"></i>
-                        </span>
-                        <span>Resume</span>
-                    </a>
                     <a class="navbar-item" href="#portfolio">
                         <span class="icon">
                             <i class="fas fa-th-list"></i>
@@ -73,7 +67,15 @@
                 <div class="section-heading ">
                     <h3 class="title is-2">Portfolio</h3>
                     <h4 class="subtitle is-5">My latest works</h4>
+                    <a href="https://drive.google.com/file/d/1cr9Ijj9RyJ87n7zm0UPZ-0vX5CCeHuHk/view?usp=drive_link"
+                        class="button is-link is-medium is-light">
+                        <span class="icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <span>Download My Resume</span>
+                    </a>
                 </div>
+
                 <p class="subtitle is-5 mb-1">Filters:</p>
                 <button @click="setTag('Web')" :class="tag == 'Web'? 'is-active' : ''"
                     class="button mr-2 is-light my-3">Web</button>
@@ -320,19 +322,7 @@
             </div>
         </div>
     </section>
-    <section class="section" id="resume">
-        <div class="section-heading">
-            <h3 class="title is-2">Resume</h3>
-            <h4 class="subtitle is-5">More about my past</h4>
-            <a href="https://drive.google.com/file/d/1cr9Ijj9RyJ87n7zm0UPZ-0vX5CCeHuHk/view?usp=drive_link"
-                class="button is-link is-medium is-light">
-                <span class="icon">
-                    <i class="fas fa-file-alt"></i>
-                </span>
-                <span>Download My Resume</span>
-            </a>
-        </div>
-    </section>
+
     </div>
     <script type="module" src="main.js"></script>
 </body>
