@@ -5,7 +5,7 @@ createApp({
         function setTag(value) {
             tag.value = value
         }
-        const tag = ref('Web')
+        const tag = ref('')
         const works_content = reactive({
             arr:
                 [
@@ -72,6 +72,14 @@ createApp({
                         previewLink: '#',
                         sourceLink: 'https://github.com/Versus-91/pacman_final',
                         palceholderImage: 'images/drl.webp',
+                        tags: ['Deep Learning']
+                    },
+                    {
+                        title: 'Understanding the black box of Machine Learning',
+                        description: `This project aims to explore the decision-making process of different machine learning algorithms by employing interpretability methods, specifically Partial Dependence Plots (PDP) and feature importance analysis. The study investigates the advantages and disadvantages of each method when applied to a diverse set of datasets.`,
+                        previewLink: '#',
+                        sourceLink: 'https://github.com/Versus-91/blackboxofmachinelearning',
+                        palceholderImage: 'images/t.webp',
                         tags: ['Deep Learning']
                     },
                 ]
