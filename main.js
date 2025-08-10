@@ -19,7 +19,7 @@ createApp({
                     },
                     {
                         title: 'Realtor App(web and android)',
-                        description: `A full-stack real estate management platform with a web frontend built in Vue.js, a robust .NET backend using Domain-Driven Design (DDD) principles, a SQL Server database, and a cross-platform mobile app developed with Flutter.`,
+                        description: `A full-stack real estate management platform with a web frontend built in Vue.js, a ASP.NET Core backend, a SQL Server database, and a cross-platform mobile app developed with Flutter.`,
                         previewLink: '#',
                         sourceLink: 'https://github.com/Versus-91/houseclassifieds',
                         tags: ['Web'],
