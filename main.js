@@ -12,7 +12,7 @@ createApp({
                     {
                         title: 'Machine Learning in Web',
                         description: `A web-based platform for building machine learning pipelines with integrated tools for PFI, PDP, PCA, t-SNE, and autoencoders. Supports data visualization, explainable AI, and dimensionality reduction. Scales to large datasets via TU Dresden's HPC infrastructure.`,
-                        previewLink: '#',
+                        previewLink: 'https://jolly-pebble-0add22003.2.azurestaticapps.net/',
                         sourceLink: '#',
                         tags: ['Web', 'Machine Learning'],
                         palceholderImage: 'images/t.webp'
