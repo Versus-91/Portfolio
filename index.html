@@ -95,11 +95,11 @@
                                         </span>
                                     </p>
                                 </header>
-                                <div class="card-content ">
+                                <div class="card-content">
                                     <figure class="image">
                                         <img :src="card.palceholderImage">
                                     </figure>
-                                    {{card.description}}
+                                    <span v-html="card.description"></span>
                                 </div>
                                 <footer class="card-footer">
                                     <a :href="card.previewLink" class="card-footer-item">{{ card.previewLink === '#'

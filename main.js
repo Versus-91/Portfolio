@@ -27,15 +27,39 @@ createApp({
                     },
                     {
                         title: 'Distance Aware Vision Transformer',
-                        description: `Vision Transformer models are permutation invariant, meaning they cannot discern the
-                                order of image token embeddings. In the case of whole slide images, it is common to use
-                                sample
-                                patches rather than the entire image. The aim of this project was to explore methods
-                                that can be useful for directly changing attention scores based on patch distances to
-                                create a distance-aware Vision Transformer.`,
+                        description: `Improved model accuracy for cancer detection in whole slide images by 5% by designing a novel distance-aware Vision Transformer (ViT) that incorporated spatial relationships between patches into the self-attention mechanism.
+<br/>
+Tools and dataset: Pytorch, TCGA-BRCA`,
                         previewLink: '#',
                         palceholderImage: 'images/t.webp',
                         sourceLink: 'https://github.com/Versus-91/SpatiallyAwareTransformerNetwork',
+                        tags: ['Deep Learning']
+                    }
+                    , {
+                        title: 'Reinforcement Learning Pac-man',
+                        description: `Using Deep Reinforcement Learning models to learn how to play Pac-man based on
+                                interaction wiith the game
+                                and feedback received.`,
+                        previewLink: '#',
+                        sourceLink: 'https://github.com/Versus-91/pacman_final',
+                        palceholderImage: 'images/drl.webp',
+                        tags: ['Deep Learning']
+                    },
+                    {
+                        title: 'Understanding the black box of Machine Learning',
+                        description: `
+                        This project explores the "black box" nature of machine learning algorithms by applying model interpretability techniques. The primary goal is to understand and compare how different models make their predictions and limitation of 2 common explainability methods.
+<ul>
+<li>Techniques Used: Partial Dependence Plots (PDP) and Feature Importance analysis</li>
+
+<li>Models Tested: Logistic/Linear Regression, Random Forest, XGBoost, Multilayer perceptron, and support vector machine </li>
+
+<li>Datasets: California housing, Diabetes, MNIST, heart disease </li>
+</ul>`
+                        ,
+                        previewLink: '#',
+                        sourceLink: 'https://github.com/Versus-91/blackboxofmachinelearning',
+                        palceholderImage: 'images/t.webp',
                         tags: ['Deep Learning']
                     },
                     {
@@ -64,24 +88,7 @@ createApp({
                         sourceLink: 'https://github.com/Versus-91/Map',
                         palceholderImage: 'images/map.png',
                         tags: ['Web']
-                    }, {
-                        title: 'Reinforcement Learning Pac-man',
-                        description: `Using Deep Reinforcement Learning models to learn how to play Pac-man based on
-                                interaction wiith the game
-                                and feedback received.`,
-                        previewLink: '#',
-                        sourceLink: 'https://github.com/Versus-91/pacman_final',
-                        palceholderImage: 'images/drl.webp',
-                        tags: ['Deep Learning']
-                    },
-                    {
-                        title: 'Understanding the black box of Machine Learning',
-                        description: `This project aims to explore the decision-making process of different machine learning algorithms by employing interpretability methods, specifically Partial Dependence Plots (PDP) and feature importance analysis. The study investigates the advantages and disadvantages of each method when applied to a diverse set of datasets.`,
-                        previewLink: '#',
-                        sourceLink: 'https://github.com/Versus-91/blackboxofmachinelearning',
-                        palceholderImage: 'images/t.webp',
-                        tags: ['Deep Learning']
-                    },
+                    }
                 ]
         })
         const currentCards = computed(() => {
