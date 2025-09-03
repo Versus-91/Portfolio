@@ -28,8 +28,8 @@ createApp({
                     {
                         title: 'Distance Aware Vision Transformer',
                         description: `Improved model accuracy for cancer detection in whole slide images by 5% by designing a novel distance-aware Vision Transformer (ViT) that incorporated spatial relationships between patches into the self-attention mechanism.
-<br/>
-Tools and dataset: Pytorch, TCGA-BRCA`,
+                        <br/>
+                        Tools and dataset: Pytorch, TCGA-BRCA`,
                         previewLink: '#',
                         palceholderImage: 'images/t.webp',
                         sourceLink: 'https://github.com/Versus-91/SpatiallyAwareTransformerNetwork',
@@ -57,8 +57,6 @@ Tools and dataset: Pytorch, TCGA-BRCA`,
                     }, {
                         title: 'Data Visualizations with D3',
                         description: `Used D3 to create data visualizations for public datasets.`,
-                        previewLink: 'https://versus-91.github.io/Map/',
-                        sourceLink: 'https://github.com/Versus-91/Map',
                         palceholderImage: 'images/map.png',
                         tags: ['Web']
                     }
