@@ -54,29 +54,9 @@ Tools and dataset: Pytorch, TCGA-BRCA`,
                         sourceLink: 'https://github.com/Versus-91/blackboxofmachinelearning',
                         palceholderImage: 'images/t.webp',
                         tags: ['Deep Learning']
-                    },
-                    {
-                        title: 'Force Directed Graph and Magic Lense ',
-                        description: `Force Directed Graph for visualizing graphs with magic lense to show extra information based on user interactions.`,
-                        previewLink: 'https://versus-91.github.io/ForceDirectedGraph/',
-                        sourceLink: 'https://github.com/Versus-91/ForceDirectedGraph',
-                        palceholderImage: 'images/pcp.png',
-                        tags: ['Web']
-                    },
-                    {
-                        title: 'Parallel Coordinate Plot with brushing',
-                        description: `Parallel Coordinate Plot visualization for high deimension data visualization with magic
-                                lense for focusing on
-                                certain parts of the visualization.`,
-                        previewLink: '#',
-                        sourceLink: 'https://github.com/Versus-91/ppc',
-                        palceholderImage: 'images/para.webp',
-                        tags: ['Web']
                     }, {
-                        title: 'US airports visualization with D3',
-                        description: `Parallel Coordinate Plot visualization for high deimension data visualization with magic
-                                lense for focusing on
-                                certain parts of the visualization.`,
+                        title: 'Data Visualizations with D3',
+                        description: `Used D3 to create data visualizations for public datasets.`,
                         previewLink: 'https://versus-91.github.io/Map/',
                         sourceLink: 'https://github.com/Versus-91/Map',
                         palceholderImage: 'images/map.png',
