@@ -48,14 +48,7 @@ Tools and dataset: Pytorch, TCGA-BRCA`,
                     {
                         title: 'Understanding the black box of Machine Learning',
                         description: `
-                        This project explores the "black box" nature of machine learning algorithms by applying model interpretability techniques. The primary goal is to understand and compare how different models make their predictions and limitation of 2 common explainability methods.
-<ul>
-<li>Techniques Used: Partial Dependence Plots (PDP) and Feature Importance analysis</li>
-
-<li>Models Tested: Logistic/Linear Regression, Random Forest, XGBoost, Multilayer perceptron, and support vector machine </li>
-
-<li>Datasets: California housing, Diabetes, MNIST, heart disease </li>
-</ul>`
+                        Explored the "black box" nature of machine learning algorithms by applying model interpretability techniques to explain ML models' decissions.`
                         ,
                         previewLink: '#',
                         sourceLink: 'https://github.com/Versus-91/blackboxofmachinelearning',
