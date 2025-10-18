@@ -15,7 +15,7 @@ createApp({
                         previewLink: 'https://jolly-pebble-0add22003.2.azurestaticapps.net/',
                         sourceLink: '#',
                         tags: ['Web', 'Machine Learning'],
-                        palceholderImage: 'images/t.webp'
+                        palceholderImage: 'images/logo.png'
                     },
                     {
                         title: 'Realtor App(web and android)',
