@@ -45,7 +45,7 @@ createApp({
                         tags: ['Deep Learning']
                     },
                     {
-                        title: 'Understanding the black box of Machine Learning',
+                        title: 'The black box of Machine Learning',
                         description: `
                         Explored the "black box" nature of machine learning algorithms by applying model interpretability techniques to explain ML models' decissions.`
                         ,
