@@ -55,5 +55,10 @@ html {
   display: inline-block;
 }
 .roboto {
-  font-family: 'Roboto';
+  font-family: Roboto, Open sans, Arial, serif;
+}
+.center {
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }

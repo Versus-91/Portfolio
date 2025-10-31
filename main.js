@@ -27,9 +27,8 @@ createApp({
                     },
                     {
                         title: 'Distance Aware Vision Transformer',
-                        description: `Improved model accuracy for cancer detection in whole slide images by 5% by designing a novel distance-aware Vision Transformer (ViT) that incorporated spatial relationships between patches into the self-attention mechanism.
-                        <br/>
-                        Tools and dataset: Pytorch, TCGA-BRCA`,
+                        description: `Improved model accuracy for cancer detection in whole slide images by designing a distance-aware Vision Transformer (ViT) that incorporated spatial relationships between patches into the self-attention mechanism.
+                        `,
                         previewLink: '#',
                         palceholderImage: 'images/t.webp',
                         sourceLink: 'https://github.com/Versus-91/SpatiallyAwareTransformerNetwork',
